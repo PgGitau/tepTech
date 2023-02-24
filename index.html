@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./resources/css/styles.css" type="text/css">
+    <script src="./resources/nav.js" defer></script>
+    <title>tepTech Web Development</title>
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link href="./resources/fontawesome/css/all.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicon/apple-touch-icon.webp">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon/favicon-32x32.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon/favicon-16x16.webp">
+    <link rel="manifest" href="./resources/favicon/site.webmanifest">
+</head>
+
+<body>
+    <!-- LOGO AND NAV BAR SECTION -->
+    <header class="primary-header flex">
+        <!-- LOGO -->
+        <div class="logo">
+            <a href="./index.html">tepTech&#174;</a> 
+        </div>
+
+        <!-- NAV BAR -->
+        <nav>
+            <ul id="primary-navigation" class="primary-navigation flex">
+                <li><a href="./pages/about/about.html">About Us</a></li>
+                <li><a href="./pages/contact/contact.html">Contact-Us</a></li>
+                <li><a href="./pages/gallery/gallery.html">Portfolio</a></li>
+            </ul>
+        </nav>
+
+        <!-- MOBILE NAV BAR -->
+        <div class="burger" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="menu-text">MENU</span>
+            <span class="close-text">CLOSE</span>
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN SECTION -->
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-container">
+            <div class="hero-text">
+                <h1>Propel your business to the next level</h1>
+                <p>Get a website <span class="bold">today</span> and engage a wider audience to increase sales.
+                    <span class="bold">tepTech&#174;</span> is trusted by different companies and startups as the No.1 Web Development company.</p>
+                <div class="cta-btn">
+                    <a class="contact-cta" href="tel:+254123456789">Contact Us Now&nbsp;<span class="fa-solid fa-phone"></span></a>
+                    <a class="learn-cta" href="">Learn More&nbsp;<span class="fa-solid fa-arrow-up-right-from-square"></span></a>
+                </div>
+            </div>
+            <div class="hero-images">
+                <div class="hero-image"></div>
+            </div>
+        </section>
+
+        <section class="companies-container">
+            <h1 class="companies-header">Brands we've worked with:</h1>
+            <div class="companies">
+                <img src="./resources/images/turkana2.png" alt="turkana company logo" >
+                <img src="./resources/images/dodddle.png" alt="turkana company logo" >
+                <img src="./resources/images/myHomeLand.png" alt="turkana company logo" >
+                <img src="./resources/images/techwheezy.png" alt="turkana company logo" >
+                <img src="./resources/images/travvely.png" alt="turkana company logo" >
+                <img src="./resources/images/Snip.png" alt="turkana company logo" >
+            </div>
+        </section>
+
+        <!-- What we do section -->
+        <!-- <section class="what-container">
+            <div class="what-header">
+                <h1>What we do:</h1>
+            </div>
+            
+            <div class="what-contents">
+                <div class="what-content design">
+                    <span><i class="fa-regular fa-pen-to-square"></i></span>
+                    <h1>Web Design</h1>
+                    <p id="what-one">We design the best-fitting solutions resulting with a perfectly shaped web product concept and fascinating user experience.</p>
+                </div>
+    
+                <div class="what-content develop">
+                    <span><i class="fa-solid fa-code"></i></span>
+                    <h1>Web Development</h1>
+                    <p id="what-two">We develop scalable, secure, high-performance, and custom websites to deliver a superior customer experience.</p>
+                </div>
+    
+                <div class="what-content security">
+                    <span><i class="fa-solid fa-shield"></i></span>
+                    <h1>Web Security</h1>
+                    <p id="what-three">We offer top security solutions to ensure your website is safe for your clients.</p>
+                </div>
+            </div>
+            
+        </section> -->
+
+        <!-- why-us section -->
+        <!-- <section class="whyus-container">
+            <div class="whyus-main">
+                <div class="whyus-hero">
+                </div>
+
+                <div class="whyus-content">
+                    <h1>Why choose us?</h1>
+                    <ul>
+                        <li>Experienced.</li>
+                        <li>Quality Guaranteed</li>
+                        <li>24/7 Support.</li>
+                    </ul>
+                    <a href="">GET IN TOUCH NOW!</a>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Portfolio Section -->
+        <!-- <section class="portfolio-container">
+            <div class="portfolio-header">
+                <h1>The Variety of Projects We've done</h1>
+            </div> 
+            <div class="portfolio-list"></div>   
+        </section> -->
+
+
+        <!-- FAQ section -->
+        <section class="faq-container">
+            <h1>Do you have any Questions. View the FAQs below or <a href="./pages/contact/contact.html">Contact Us</a></h1>
+            <div class="accordion">
+                <div>
+                    <input type="checkbox" name="faq-accordion" id="question1" class="accordion-input">
+                    <label for="question1" class="accordion-label">&#x2022; What is the average cost for a website?</label>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quis fugiat debitis reiciendis quisquam praesentium architecto commodi eveniet nisi esse! ipsum, dolor sit amet consectetur adipisicing elit. Et, tenetur.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="faq-accordion" id="question2" class="accordion-input">
+                    <label for="question2" class="accordion-label">&#x2022; How long will I wait for my website to be ready?</label>
+                    <div class="accordion-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae eaque odio sed quas eveniet cum laudantium neque fuga debitis ipsam. ipsum, dolor sit amet consectetur adipisicing elit. Et, tenetur.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="faq-accordion" id="question3" class="accordion-input">
+                    <label for="question3" class="accordion-label">&#x2022; Where do I start?</label>
+                    <div class="accordion-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora amet rerum ea corporis dignissimos optio minima porro est perspiciatis enim. ipsum, dolor sit amet consectetur adipisicing elit. Et, tenetur.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="faq-accordion" id="question4" class="accordion-input">
+                    <label for="question4" class="accordion-label last">&#x2022; Do you offer technical support  24/7?</label>
+                    <div class="accordion-content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora amet rerum ea corporis dignissimos optio minima porro est perspiciatis enim. ipsum, dolor sit amet consectetur adipisicing elit. Et, tenetur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- FOOTER SECTION -->
+    <footer>
+        <section class="footer-container">
+            <div class="quick-links footer-types">
+                <h1>Quick Links</h1>
+                <div class="footer-links">
+                    <a href="./pages/contact/contact.html">Contact Us</a>
+                    <a href="./pages/gallery/gallery.html">Portfolio</a>
+                    <a href="./pages/about/about.html">About Us</a>
+                    <a href="./pages/terms/terms.html">Terms and Conditions</a>
+                    <a href="./pages/attribution/attributions.html">Attributions</a>
+                </div>
+            </div>
+
+
+            <div class="socials footer-types">
+                <h1>Socials</h1>
+                <div class="footer-links" id="social">
+                    <a href="https://facebook.com" target="_blank" class="facebook"><span class="fa-brands fa-square-facebook"></span></a>
+                    <a href="https://instagram.com" target="_blank"><span class="fa-brands fa-square-instagram"></span></a>
+                    <a href="https://twitter.com" target="_blank"><span class="fa-brands fa-square-twitter"></span></a>
+                    <a href="https://youtube.com" target="_blank"><span class="fa-brands fa-square-youtube"></span></a>
+                </div>
+            </div>
+        </section>
+        <p class="footer-text">&copy;Sniptech Inc, 2022 | All rights Reserved | Made with <span class="fa-solid fa-heart"></span> by <a href="https://github.com/pggitau" target="_blank">R3t3p</a></p>
+    </footer>
+        
+    <!-- typed effect -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Sniptech&#174;", "Web Designers",  "Web Developers"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script> -->
+</body>
+</html>
