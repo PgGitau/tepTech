@@ -93,7 +93,7 @@ main {
 /* LOGO STYLING */
 .logo {
     border: 2px solid rgb(0, 0, 0);
-    padding: .5rem;
+    padding: .2rem;
     /* -ms-transform: rotate(30deg); IE 9 */
     transform: rotate(-10deg);
     background-color: #0c1821;
@@ -330,17 +330,15 @@ main {
 
     gap: 1.5rem;
 }
-
 .hero-text h1 {
     font-size: 2rem;
     line-height: 2rem;
 }
-
 .hero-text p {
     font-size: 1.4rem;
     line-height: 1.3rem;
 }
-
+/* links/buttons */
 .cta-btn {
     /* border: 2px solid red; */
     display: flex;
@@ -356,38 +354,33 @@ main {
     border: 2px solid black;
     padding: .5rem 1rem;
 }
-
 .hero-text .contact-cta {
     background-color: #9E709F;
     transition: background-color 300ms ease-in-out,
         color 300ms ease-in-out,
         border-color 300ms ease-in-out;
 }
-
 .hero-text .contact-cta:hover {
     background-color: #2E2D4D;
     color: #f6f5f8;
     border-color: #f6f5f8;
 }
-
 .hero-text .learn-cta {
     color: #f6f5f8;
     background-color: #337357;
     transition: background-color 300ms ease-in-out,
         color 300ms ease-in-out;
 }
-
 .hero-text .learn-cta:hover {
     background-color: #f6f5f8;
     color: #0c1821;
 }
-
+/* hero image styling */
 .hero-images {
     /* border: 2px solid rgb(55, 0, 255); */
     width: 100%;
     height: 50%;
 }
-
 .hero-image {
     height: 100%;
     animation-duration: 2s;
@@ -399,7 +392,6 @@ main {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
 @keyframes slidein {
     from {
         margin-left: 100%;
@@ -412,13 +404,12 @@ main {
     }
 }
 
-/* media queries */
+/* HERO SECTION Media queries  */
 @media (max-width: 640px) {
     .hero-container {
         margin-top: 6rem;
     }
 }
-
 
 @media (min-width: 230px) and (max-width: 375px) {
     /* .hero-container {
@@ -511,9 +502,24 @@ main {
     }
     span.tilt {
         display: inline-block;
-        /* color: #000000; */
         background-color: #9e709fa8;
         transform: rotate(-10deg);
+
+        position: relative;
+    }
+    span.tilt::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        height: 0;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0) #9E709fa8;
+        border-width: 24px;
+        border-right-width: 0;
+        width: 0;
+        /* height: 0; */
     }
     .hero-text {
         /* border: 2px solid rgb(26, 9, 180); */
@@ -554,6 +560,10 @@ main {
         width: 40%;
         padding-left: 3rem; 
     }
+    span.tilt::after {
+        border-width: 27px;
+        border-right-width: 0;
+    }
     .hero-text h1 {
         font-size: 3.3rem;
         line-height: 3.4rem;
@@ -565,33 +575,88 @@ main {
 }
 
 
-/* COMPANIES SECTION */
+
+/* COMPANIES/BRANDS SECTION */
 .companies-container {
-    margin-block: 7rem;
-    /* background-color: #f6f5f8; */
-    height: 300px;
+    text-align: center;
+    margin-block: 4rem;
+    padding: 1rem;
     /* border-block: 2px solid black; */
+    background-color: #9e709f2d;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    
-    position: relative;
-
-    overflow: scroll;
-}
-.companies-header {
-    font-size: 2.6rem;
-}
-.companies{ 
-    /* border: 2px solid red; */
-    display: flex;
-    gap: 7rem;
     /* align-items: center; */
     justify-content: center;
-    
+    gap: 2rem;
+}
+.companies-header {
+    /* border: 2px solid yellow; */
+    font-size: 1.4rem;
+}
+.companies { 
+    /* border-block: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+.company-logos {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.turkana, .dodddle, 
+.myhomeland, .techwheezy,
+.travvely, .snip {
+    height: 100px;
+}
+.turkana {
+    background-image: url("../images/turkana.png");
+}
+.dodddle {
+    background-image: url("../images/dodddle.png");
+}
+.myhomeland {
+    background-image: url("../images/myHomeLand.png");
+}
+.techwheezy {
+    background-image: url("../images/techwheezy.png");
+}
+.travvely {
+    background-image: url("../images/travvely.png");
+}
+.snip {
+    background-image: url("../images/Snip.png");
+}
+
+/* COMPANIES/BRANDS media queries */
+@media (min-width: 321px) {
+    .companies { 
+        /* border: 2px solid red; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem; 
+    }
+    .company-logos {
+        min-width: 150px;
+    }
+}
+@media (min-width: 376px) {
+    .companies-header {
+        font-size: 1.8rem;
+    }
+}
+/* non-mobile */
+@media (min-width: 641px) {
+    .companies-container {
+        align-items: center;
+    }
+    .companies-header {
+        font-size: 2.5rem;
+        /* letter-spacing: .3rem; */
+    }
+    .companies { 
+        width: 500px;
+    }
 }
 /* .hero-container::after {
     content: '';
