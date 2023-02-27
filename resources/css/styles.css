@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    background-color: #d7cccc;
 }
 * {
     box-sizing: border-box;
@@ -35,7 +36,6 @@ html {
 main {
     /* border: 2px solid rgb(212, 10, 10); */
     margin-top: 85px;
-    background-color: #f5eee5;
 }
 /* MAIN media queries */
 @media (min-width: 641px) {
@@ -57,7 +57,7 @@ main {
     padding: 1rem;
     height: 6rem;
     /* min-height: 6rem; */
-    background-color: #f5eee5;
+    background-color: #d7cccc;
 
     z-index: 9999;
 
@@ -101,7 +101,7 @@ main {
 }
 .logo a {
     /* border: 2px solid white; */
-    color: #DAD6D6;
+    color: #d7cccc;
     font-size: 1.1rem;
     font-weight: bold;
     text-decoration: none;
@@ -137,7 +137,8 @@ main {
 /* PRIMARY-NAVIGATION CLASS STYLING(NAV) */
 .primary-navigation {
     /* border: 2px solid rgb(22, 2, 2); */
-    border-top: 2px solid #000000;
+    border-top: 2px solid #0000004b;
+    border-left: 2px solid #0000004b;
     padding: min(20vh, 10rem) 2rem;
     list-style-type: none;
 
@@ -147,7 +148,7 @@ main {
     position: fixed;
     inset: 5.8rem 0 0 40%;
 
-    background-color: #f5eee5;
+    background-color: #d7cccc;
     flex-direction: column;
     align-items: center;
 }
@@ -164,7 +165,7 @@ main {
 }
 .primary-navigation li:hover {
     background-color: 0;
-    color: #9E709F;
+    color: #791e94;
     border: 0;
 }
 .primary-navigation li:hover a {
@@ -212,6 +213,7 @@ main {
 @media (min-width: 641px) {
     .primary-navigation {
         border-top: 0;
+        border-left: 0;
         /* border: 2px solid rgb(224, 207, 207); */
         position: relative;
         padding: 1rem;
@@ -309,7 +311,7 @@ main {
 .hero-container {
     text-align: center;
     /* border: 2px solid rgb(7, 3, 3); */
-    background-color: #f5eee5;
+    /* background-color: #f5eee5; */
     /* margin-top: 6rem; */
     height: 570px;
     color: #000000;
@@ -355,15 +357,14 @@ main {
     padding: .5rem 1rem;
 }
 .hero-text .contact-cta {
-    background-color: #9E709F;
+    color: #d7cccc;
+    background-color: #791e94;;
     transition: background-color 300ms ease-in-out,
-        color 300ms ease-in-out,
         border-color 300ms ease-in-out;
 }
 .hero-text .contact-cta:hover {
     background-color: #2E2D4D;
-    color: #f6f5f8;
-    border-color: #f6f5f8;
+    border-color: #d7cccc;
 }
 .hero-text .learn-cta {
     color: #f6f5f8;
@@ -372,7 +373,7 @@ main {
         color 300ms ease-in-out;
 }
 .hero-text .learn-cta:hover {
-    background-color: #f6f5f8;
+    background-color: #d7cccc;
     color: #0c1821;
 }
 /* hero image styling */
@@ -387,7 +388,7 @@ main {
     animation-name: slidein;
     /* border: 2px solid red; */
 
-    background-image: url("../images/hero7.jpg");
+    background-image: url("../images/hero13.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -502,7 +503,8 @@ main {
     }
     span.tilt {
         display: inline-block;
-        background-color: #9e709fa8;
+        background-color: #791e94;
+        color: #d7cccc;
         transform: rotate(-10deg);
 
         position: relative;
@@ -515,7 +517,7 @@ main {
         left: 100%;
         height: 0;
         border-style: solid;
-        border-color: rgba(0, 0, 0, 0) #9E709fa8;
+        border-color: rgba(0, 0, 0, 0) #791e94;
         border-width: 24px;
         border-right-width: 0;
         width: 0;
@@ -582,7 +584,7 @@ main {
     margin-block: 4rem;
     padding: 1rem;
     /* border-block: 2px solid black; */
-    background-color: #9e709f2d;
+    /* background-color: #9e709f2d; */
 
     display: flex;
     flex-direction: column;
@@ -601,6 +603,7 @@ main {
     justify-content: center;  
 }
 .company-logos {
+    /* border: 2px solid black; */
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -610,25 +613,45 @@ main {
     height: 100px;
 }
 .turkana {
-    background-image: url("../images/turkana.png");
+    background-image: url("../images/turkana-logos_black\ \(1\).png");
 }
 .dodddle {
-    background-image: url("../images/dodddle.png");
+    background-image: url("../images/dodddle-logos_black.png");
 }
 .myhomeland {
-    background-image: url("../images/myHomeLand.png");
+    background-image: url("../images/myHomeLand-logos_black.png");
 }
 .techwheezy {
-    background-image: url("../images/techwheezy.png");
+    background-image: url("../images/techwheezy-logos_black.png");
 }
 .travvely {
-    background-image: url("../images/travvely.png");
+    background-image: url("../images/travvely-logos_black.png");
 }
 .snip {
-    background-image: url("../images/Snip.png");
+    background-image: url("../images/Snip-logos_black\ \(1\).png");
 }
 
 /* COMPANIES/BRANDS media queries */
+@media (max-width: 376px) {
+    .turkana {
+        background-image: url("../images/turkana.png");
+    }
+    .dodddle {
+        background-image: url("../images/dodddle.png");
+    }
+    .myhomeland {
+        background-image: url("../images/myHomeLand.png");
+    }
+    .techwheezy {
+        background-image: url("../images/techwheezy.png");
+    }
+    .travvely {
+        background-image: url("../images/travvely.png");
+    }
+    .snip {
+        background-image: url("../images/Snip.png");
+    }
+}
 @media (min-width: 321px) {
     .companies { 
         /* border: 2px solid red; */
@@ -637,10 +660,14 @@ main {
         gap: 1rem; 
     }
     .company-logos {
+        /* border: 2px solid red; */
         min-width: 150px;
     }
 }
 @media (min-width: 376px) {
+    .companies { 
+        gap: 2rem; 
+    }
     .companies-header {
         font-size: 1.8rem;
     }
@@ -655,8 +682,18 @@ main {
         /* letter-spacing: .3rem; */
     }
     .companies { 
-        width: 500px;
+        width: 600px;
     }
+}
+@media (min-width: 768px) {
+    .companies { 
+        /* border: 2px solid yellow; */
+        gap: 2.5rem;
+        width: 700px;
+    }
+    /* .company-logos { 
+        border: 2px solid green; 
+    } */
 }
 /* .hero-container::after {
     content: '';
