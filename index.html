@@ -146,6 +146,81 @@
             </div>
         </section>
 
+        <!-- CONTACT-US SECTION -->
+        <section class="contact-container">
+            <div class="contact-info">
+                <h1>Let's get started. Request a <span class="italics">free</span>  quote today!</h1>
+
+                <div class="contact-btn">
+                    <a href="tel:+254123456789">
+                        <span class="fa-solid fa-phone"></span>
+                        <span class="button-text">&nbsp;CALL US NOW<br>+254 123 456 789</span>
+                    </a>
+                </div>
+
+                <p>or fill the form below for more information:</p>
+            </div>
+
+            <div class="contact-form">
+                <form class="form" id="form" action="" method="POST">
+                    <!-- HONEYPOT(to catch spammers ) -->
+                    <!-- <input type="text" name="_honey" style="display: none"> -->
+        
+                    <!-- Disable CAPTCHA -->
+                    <!-- <input type="hidden" name="_captcha" value="false"> -->
+        
+                    <!-- Success page link -->
+                    <!-- <input type="hidden" name="_next" value="https://pggitau.github.io/Snip/pages/success.html"> -->
+        
+                    <div class="form-control name">
+                        <label for="name" class="block">Full Name</label>
+                        <input type="text" placeholder="John Doe" id="name" name="name" required>
+                    </div>
+        
+                    <div class="form-control email">
+                        <label for="email" class="block">Email</label>
+                        <input type="email" placeholder="johndoe@gmail.com" id="email" name="email" required>
+                    </div>
+        
+                    <div class="form-control phone">
+                        <label for="phone" class="block">Telephone Number</label>
+                        <input type="number" placeholder="0700 000 000" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-control webfor">
+                        <label for="webfor" class="block">What's the website for?</label>
+                        <input type="text" placeholder="E-Commerce, Business, Blog" id="webfor" name="Website&nbsp;For">
+                    </div>
+
+                    <div class="form-control budget">
+                        <label for="budget" class="block">What's your budget?</label>
+                        <select name="budget" id="budget">
+                            <!-- <option value="">--Please choose an option--</option> -->
+                            <option value="below 10000">below Ksh 10,000</option>
+                            <option value="10000 to 30000">between 10,000 and 30,000</option>
+                            <option value="above 30000">above 30,000</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-control message">
+                        <label for="message" class="block">Message / Question</label>
+                        <textarea placeholder="Write your Message Here" id="message" name="message&nbsp;comments" required></textarea>
+                    </div>
+        
+                    <div class="form-control terms-link form-terms">
+                        <input class="fit-content" type="checkbox" id="terms" name="terms" value="accept" required>
+                        <label for="terms" class="inline">I have read and agreed to tepTech's <a href="">Terms and
+                                Conditions</a> and the <a href="">Global Privacy Statement</a> on Data
+                            protection</label>
+                    </div>
+        
+                    <div class="form-control form-btn form-submit">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
         <!-- Portfolio Section -->
         <!-- <section class="portfolio-container">
             <div class="portfolio-header">
