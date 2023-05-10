@@ -1416,6 +1416,11 @@ main {
     }
     .testimony {
         width: 430px;
+        height: 400px;
+    }
+    .testimony .testimony-text {
+        /* border: 2px solid red; */
+        height: 100px;
     }
 }
 @media (min-width: 1306px) {
@@ -1443,6 +1448,11 @@ main {
     }
     .testimony {
         width: 300px;
+        height: 430px;
+    }
+    .testimony .testimony-text {
+        /* border: 2px solid red; */
+        height: 150px;
     }
 }
 
@@ -1489,7 +1499,7 @@ main {
 }
 .accordion {
     max-width: 1200px;
-    border: 2px solid rgba(0, 0, 0, 0.322);
+    border: 2px solid #f46036;
     margin-block: .5rem;
     margin-inline: auto;
     /* box-shadow: .2rem .2rem rgb(151, 106, 23); */
